@@ -1,22 +1,23 @@
 <!DOCTYPE>
 <html>
   <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>jquery-countdown plugin test</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery-1.7.2.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <link href="css/media.css" rel="stylesheet" type="text/css" />
     <script>
       $(function(){
         $(".digits").countdown({
           image: "img/digits.png",
-          format: "dd:hh:mm:ss",
-          endTime: new Date(2013, 12, 2)
+          format: "DDDD 天 hh 小时 mm 分钟 ss 秒",//日期显示的格式
+          endTime: new Date(2017, 9, 9,    9,53,0)//设定正计时或者倒计时的目标时间，2017年10月9日，9:53:00
         });
       });
     </script>
   </head>
   <body>
-    <a href="https://github.com/Reflejo/jquery-countdown"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/AlexZhuo/jquery-countdown"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
     <div class="wrapper">
       <div class="cell">
         <div id="holder">
