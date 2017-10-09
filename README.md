@@ -11,9 +11,15 @@ Now you can download the PSD file
 ### Basic usage:(推荐使用下面的格式，其他的没测试过)
 
 ```javascript
-  image: "img/digits.png",
-  format: "DDDD 天 hh 小时 mm 分钟 ss 秒",//日期显示的格式
-  endTime: new Date(2017, 9, 9,    9,53,0)//设定正计时或者倒计时的目标时间，2017年10月9日，9:53:00
+  <script>
+      $(function(){
+        $(".digits").countdown({
+          image: "img/digits.png",
+          format: "DDDD 天 hh 小时 mm 分钟 ss 秒",//日期显示的格式
+          endTime: new Date(2017, 9, 9,    9,53,0)//设定正计时或者倒计时的目标时间，2017年10月9日，9:53:00
+        });
+      });
+   </script>
 ```
 
 ### Complete usage:
